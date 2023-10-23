@@ -2130,6 +2130,7 @@ section {
     font-size: 19px;
     font-weight: 600;
 }
+
 .grid-post-media_title h4 a , .gpm_sing .author-link a {
 	color: #fff;
 }
@@ -5494,4 +5495,15 @@ h4.cart-title span {
 	-webkit-background-size:cover;
 	background-position:center;
 }
+}
+
+.logo-holder img{
+	width:auto !important;
+	height: 240%;
+}
+.footer-holder img{
+	width:auto !important;
+	height:74px !important;
+	margin-top:-30px !important;
+
 }

@@ -1,3 +1,4 @@
+
 from .base import *
 from .ckeditor_conf import CKEDITOR_CONFIGS
 
@@ -57,7 +58,7 @@ DEFAULT_FROM_EMAIL = "newsment@info.co.ke"
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://newzfox.com",
+    "https://newzfox.com",
     # Add other allowed origins here
 ]
 
@@ -85,6 +86,5 @@ CORS_ALLOW_METHODS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://newzfox.com",
-    
+    "https://newzfox.com",
 ]

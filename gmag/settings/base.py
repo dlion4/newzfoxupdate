@@ -137,9 +137,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 TE_URL = "node_modules/"
 STATIC_URL = "static/"
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+#STATICFILES_DIRS = [
+ #   BASE_DIR / "static",
+#]
 STATIC_ROOT = "/home/kwasa/newzfox/static"
 MEDIA_URL = "media/"
 
