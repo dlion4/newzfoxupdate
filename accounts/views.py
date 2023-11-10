@@ -41,7 +41,6 @@ class LoginView(generic.TemplateView):
 
         except AccountUser.DoesNotExist:
             context["InvalidCredentials"] = "Invalid Email Address"
-            print(request.POST, user)
             context["error"] = "Invalid Credentials"
             return render(request, self.template_name, context)
 
@@ -64,7 +63,6 @@ class RegisterView(generic.TemplateView):
         user = AccountUser.objects.create_user(
             email=email, password=password1, username=username
         )
-        # print(user)
         return redirect("accounts:login")
 
 

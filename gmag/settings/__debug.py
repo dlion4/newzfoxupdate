@@ -1,5 +1,5 @@
 
-from .base import *
+from .aws3 import *
 from .ckeditor_conf import CKEDITOR_CONFIGS
 
 LOCAL_APPS = [
@@ -14,8 +14,6 @@ LOCAL_APPS = [
 FRAMEWORK_APPS = [
     "ckeditor",
     "ckeditor_uploader",
-    "cloudinary_storage",
-    "cloudinary",
     "corsheaders",
     'django_social_share',
 ]

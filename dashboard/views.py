@@ -101,7 +101,6 @@ class DashboardProfileView(CustomAuthorizerCheck, ProfileDashboardMixins,generic
         )
         if form.is_valid():
             profile = Profile.objects.get(user=self.request.user)
-            print(profile)
             profile.user = self.request.user
             profile.first_name = form.cleaned_data.get("first_name")
             profile.last_name = form.cleaned_data.get("last_name")

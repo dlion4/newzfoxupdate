@@ -29,9 +29,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*", "localhost"]
+ALLOWED_HOSTS = ["*", "localhost", ".awsapprunner.com"]
 
 
 # Application definition
@@ -135,22 +135,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-TE_URL = "node_modules/"
-STATIC_URL = "static/"
-#STATICFILES_DIRS = [
- #   BASE_DIR / "static",
-#]
-STATIC_ROOT = "/home/kwasa/newzfox/static"
-MEDIA_URL = "media/"
 
-CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": os.environ.get("CLOUD_NAME"),
-    "API_KEY": os.environ.get("API_KEY"),
-    "API_SECRET": os.environ.get("API_SECRET"),
-}
-
-
-DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
