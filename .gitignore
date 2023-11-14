@@ -3,3 +3,5 @@ venv/
 .env
 env/
 stylenew.css
+db.sqlite3
+static/css/*copy.css
