@@ -40,9 +40,9 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name="topic_posts",
     )
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=120)
     is_editors_choice = models.BooleanField(default=False)
-    slug = models.SlugField(max_length=100, blank=True, null=True)
+    slug = models.SlugField(max_length=120, blank=True, null=True)
     tags = models.ManyToManyField(Tag, related_name="post_tags", blank=True)
     content = RichTextField(config_name="default")
     createdAt = models.DateTimeField(auto_now_add=True)
