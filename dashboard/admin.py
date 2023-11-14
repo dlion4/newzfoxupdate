@@ -46,7 +46,7 @@ class PostAdmin(admin.ModelAdmin):
     # this is for secrity purposes but van be modified later as needed
     
     def get_queryset(self, request):
-        return self.model.objects.filter(writer=request.user.user_profile).all()
+        return self.model.objects.all()
     # ensure thath during the savin gof the model, the writer can save without having to 
     # select the writer whihc is the case in default django behavior
 
