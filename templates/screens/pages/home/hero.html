@@ -41,6 +41,7 @@
                           <!---->
                           {{slide.createdAt|date:"d M Y"}}</span
                         >
+                        <!---->
                         <ul class="post-opt">
                           <li>
                             <i class="far fa-comments-alt"></i>
@@ -98,6 +99,7 @@
                 <!---->
                 {{slide.createdAt|date:"d M Y"}}</span
               >
+              <!---->
               <ul class="post-opt">
                 <li><i class="far fa-comments-alt"></i> {{slide.comments}}</li>
                 <li><i class="fal fa-eye"></i> {{slide.views}}</li>
@@ -135,9 +137,11 @@
                 >
               </h4>
               <span class="video-date"
-                ><i class="far fa-clock"></i> {{slide.createdAt|date:"d M Y"
-                }}</span
+                ><i class="far fa-clock"></i>
+                <!---->
+                {{slide.createdAt|date:"d M Y"}}</span
               >
+              <!---->
               <ul class="post-opt">
                 <li><i class="far fa-comments-alt"></i> {{slide.comments}}</li>
                 <li><i class="fal fa-eye"></i> {{slide.views}}</li>

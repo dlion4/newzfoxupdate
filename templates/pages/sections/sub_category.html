@@ -46,8 +46,11 @@
             >
           </h3>
           <span class="post-date"
-            ><i class="far fa-clock"></i>{{slide.createdAt|date:"d M Y"}}</span
+            ><i class="far fa-clock"></i>
+            <!---->
+            {{slide.createdAt|date:"d M Y"}}</span
           >
+          <!---->
           <p>{{post.summary|truncatewords:"30"}}</p>
           <ul class="post-opt">
             <li><i class="far fa-comments-alt"></i> {{slide.comments}}</li>
