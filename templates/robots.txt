@@ -1,5 +1,2 @@
-
-
-
 Sitemap: {{protocol}}://{{site_domail}}/sitemap.xml
 
