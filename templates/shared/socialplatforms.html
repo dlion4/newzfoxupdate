@@ -1,25 +1,20 @@
 <div class="share-container">
-
-
-
-
-
-
- 
+  <!--whatsapp-->
   <a
     href="https://api.whatsapp.com/send?text={{post.title}}%0A{{protocol}}://{{site_domain}}{{post.get_absolute_url}}%0A{{post.image.url}}"
     target="_blank"
     class="pop share-icon"
     ><i class="fab fa-whatsapp"></i>
   </a>
+  <!--limkedin-->
   <a
     href="https://www.linkedin.com/shareArticle?mini=true&title={{post.title}}&url={{protocol}}://{{site_domain}}{{post.get_absolute_url}}&media={{post.image.url}}&description="
     target="_blank"
     class="pop share-icon"
     ><i class="fab fa-linkedin"></i>
   </a>
-	
-	<script>
+  <!--fb-->
+  <script>
     function shareToFacebook() {
       var postTitle = encodeURIComponent("{{post.title}}");
       var postSummary = encodeURIComponent("{{post.summary}}");
@@ -44,11 +39,14 @@
     }
   </script>
 
-  <a onclick="shareToFacebook()" class="pop share-icon">
+  <a href="#" onclick="shareToFacebook()" class="pop share-icon">
     <i class="fab fa-facebook"></i>
+    <span class="icon-name">Facebook</span>
   </a>
 
-  {% comment %} twiter {% endcomment %}
+  
+
+  <!--twitter X-->
 
   <script>
     function shareToTwitterWithImage() {
@@ -87,6 +85,24 @@
     <i class="fab fa-twitter"></i>
   </a>
 
+  <!--pintreest-->
+
+  <a
+    href="https://pinterest.com/pin/create/button/?url={{protocol}}://{{site_domain}}{{post.get_absolute_url}}&media={{post.image.url}}&description={{post.title}}"
+    target="_blank"
+    class="pop share-icon"
+    ><i class="fab fa-pinterest"></i>
+  </a>
+
+  <!--quora-->
+  <a
+    href="https://www.quora.com/profile/Newzfox-Updates/?url={{post.title}}%0A{{protocol}}://{{site_domain}}{{post.get_absolute_url}}%0A{{post.image.url}}"
+    target="_blank"
+    class="pop share-icon"
+    ><i class="fab fa-quora"></i>
+  </a>
+
+  <!--clipboard-->
   <script>
     function copyTitleUrlImageToClipboard() {
       var postTitle = "{{post.title}}";
@@ -117,37 +133,5 @@
 
   <a onclick="copyTitleUrlImageToClipboard()" class="pop share-icon">
     <i class="fas fa-clipboard"></i>
-  </a>	
-
-
-
-
-
-
-
-
-  <!--
-  <a
-      href="https://newzfoxupdates.quora.com/compose?ch=2&share=={{post.title}}%0A{{protocol}}://{{site_domain}}{{post.get_absolute_url}}%0A{{post.image.url}}"
-      target="_blank"
-      class "pop share-icon"
-      ><i class="fab fa-quora"></i>
   </a>
-
--->
-  <a
-    href="https://pinterest.com/pin/create/button/?url={{protocol}}://{{site_domain}}{{post.get_absolute_url}}&media={{post.image.url}}&description={{post.title}}"
-    target="_blank"
-    class="pop share-icon"
-    ><i class="fab fa-pinterest"></i>
-  </a>
-  <a
-    href="https://www.quora.com/profile/Newzfox-Updates/?url={{post.title}}%0A{{protocol}}://{{site_domain}}{{post.get_absolute_url}}%0A{{post.image.url}}"
-    target="_blank"
-    class="pop share-icon"
-    ><i class="fab fa-quora"></i>
-  </a>
-
-
 </div>
-

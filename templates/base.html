@@ -33,6 +33,7 @@
       rel="stylesheet"
       href="{% static 'css/color.css' %}"
     />
+
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="{% static 'images/newsfoxn.png' %}" />
 
@@ -42,41 +43,52 @@
 
     <!--monetaggg adds-->
     <script>
-      (function (d, z, s) {
-        s.src = "https://" + d + "/400/" + z;
-        try {
-          (document.body || document.documentElement).appendChild(s);
-        } catch (e) {}
-      })("niwooghu.com", 6646067, document.createElement("script"));
+      setTimeout(function () {
+        // Your inline JavaScript code here
+
+        (function (d, z, s) {
+          s.src = "https://" + d + "/400/" + z;
+          try {
+            (document.body || document.documentElement).appendChild(s);
+          } catch (e) {}
+        })("niwooghu.com", 6646067, document.createElement("script"));
+      }, 20000);
     </script>
+
     <script>
-      (function (d, z, s) {
-        s.src = "https://" + d + "/401/" + z;
-        try {
-          (document.body || document.documentElement).appendChild(s);
-        } catch (e) {}
-      })("gloaphoo.net", 6646072, document.createElement("script"));
+      setTimeout(function () {
+        (function (d, z, s) {
+          s.src = "https://" + d + "/401/" + z;
+          try {
+            (document.body || document.documentElement).appendChild(s);
+          } catch (e) {}
+        })("gloaphoo.net", 6646072, document.createElement("script"));
+      }, 23000);
     </script>
 
     <script
       async="async"
       data-cfasync="false"
       src="//thubanoa.com/1?z=6646084"
+      differ
     ></script>
     <script
       src="https://yonhelioliskor.com/pfe/current/tag.min.js?z=6646091"
       data-cfasync="false"
       async
+      differ
     ></script>
     <script
       src="https://vaugroar.com/pfe/current/tag.min.js?z=6632080"
       data-cfasync="false"
       async
+      differ
     ></script>
     <script
       src="https://upkoffingr.com/pfe/current/tag.min.js?z=6632082"
       data-cfasync="false"
       async
+      differ
     ></script>
     <script
       src="https://chezoams.com/pfe/current/tag.min.js?z=6646091"
@@ -97,6 +109,17 @@
     ></script>
     <meta name="google-adsense-account" content="ca-pub-1953601505191645" />
     <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <!--page reload-->
+    <script>
+      function reloadPagePeriodically() {
+        setTimeout(function () {
+          location.reload();
+        }, 5 * 60 * 1000); // 5 minutes
+      }
+      reloadPagePeriodically();
+    </script>
+
+    <!---->
   </head>
 
   <body>
@@ -174,8 +197,8 @@
       <div class="cookie-info-bar">
         <div class="container">
           <div class="cookie-info-bar_title">
-            <i class="fal fa-cookie"></i>Our site uses cookies to improve our
-            services. Learn more about our use of cookies:
+            <i class="fal fa-cookie"></i>Our platform uses cookies to improve
+            our services. Learn more about our use of cookies:
             <a href="{% url 'privacy' %}">Cookie policy</a>
           </div>
           <a href="#" class="sicb_btn color-bg">Accept</a>
@@ -185,42 +208,46 @@
       <!-- cookie-info-bar end -->
 
       <script>
-        // Check if the user has already seen the notification by looking for a cookie
-        function hasCookieConsent() {
-          return document.cookie.indexOf("cookieConsent=true") !== -1;
-        }
+        setTimeout(function () {
+          // Your inline JavaScript code here
 
-        // Function to set a cookie that indicates the user has accepted the cookies
-        function setCookieConsent() {
-          var expirationDate = new Date();
-          expirationDate.setFullYear(expirationDate.getFullYear() + 5); // Cookie valid for 1 year
-          document.cookie =
-            "cookieConsent=true; expires=" +
-            expirationDate.toUTCString() +
-            "; path=/";
-        }
-
-        // Show the cookie notification only if the user hasn't seen it before
-        if (!hasCookieConsent()) {
-          var cookieInfoBar = document.getElementById("cookie-info-bar");
-          var acceptCookieButton = document.getElementById("accept-cookie");
-          var rejectCookieButton = document.getElementById("reject-cookie");
-
-          if (cookieInfoBar && acceptCookieButton && rejectCookieButton) {
-            cookieInfoBar.style.display = "block";
-
-            acceptCookieButton.addEventListener("click", function () {
-              setCookieConsent();
-              cookieInfoBar.style.display = "none";
-              // You can add code here to handle cookie acceptance
-            });
-
-            rejectCookieButton.addEventListener("click", function () {
-              cookieInfoBar.style.display = "none";
-              // You can add code here to handle cookie rejection
-            });
+          // Check if the user has already seen the notification by looking for a cookie
+          function hasCookieConsent() {
+            return document.cookie.indexOf("cookieConsent=true") !== -1;
           }
-        }
+
+          // Function to set a cookie that indicates the user has accepted the cookies
+          function setCookieConsent() {
+            var expirationDate = new Date();
+            expirationDate.setFullYear(expirationDate.getFullYear() + 5); // Cookie valid for 1 year
+            document.cookie =
+              "cookieConsent=true; expires=" +
+              expirationDate.toUTCString() +
+              "; path=/";
+          }
+
+          // Show the cookie notification only if the user hasn't seen it before
+          if (!hasCookieConsent()) {
+            var cookieInfoBar = document.getElementById("cookie-info-bar");
+            var acceptCookieButton = document.getElementById("accept-cookie");
+            var rejectCookieButton = document.getElementById("reject-cookie");
+
+            if (cookieInfoBar && acceptCookieButton && rejectCookieButton) {
+              cookieInfoBar.style.display = "block";
+
+              acceptCookieButton.addEventListener("click", function () {
+                setCookieConsent();
+                cookieInfoBar.style.display = "none";
+                // You can add code here to handle cookie acceptance
+              });
+
+              rejectCookieButton.addEventListener("click", function () {
+                cookieInfoBar.style.display = "none";
+                // You can add code here to handle cookie rejection
+              });
+            }
+          }
+        }, 7000);
       </script>
     </div>
     <!--=============== scripts  ===============-->
@@ -230,14 +257,16 @@
     <script src="{% static 'js/contextmenu.js' %}"></script>
 
     <script>
-      const isNoticeSeen = window.localStorage["noticeSeen"] === "true";
-      if (isNoticeSeen) {
-        $(".cookie-info-bar").css("display", "none");
-      } else {
-        $(".sicb_btn").click(function () {
-          window.localStorage["noticeSeen"] = true;
-        });
-      }
+      setTimeout(function () {
+        const isNoticeSeen = window.localStorage["noticeSeen"] === "true";
+        if (isNoticeSeen) {
+          $(".cookie-info-bar").css("display", "none");
+        } else {
+          $(".sicb_btn").click(function () {
+            window.localStorage["noticeSeen"] = true;
+          });
+        }
+      }, 7000);
     </script>
 
     <script>
